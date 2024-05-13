@@ -1,0 +1,21 @@
+<resources xmlns:tools="http://schemas.android.com/tools">
+    <!-- Base application theme. -->
+    <style name="Base.Theme.Notes" parent="Theme.Material3.Light">
+        <item name="colorPrimary">@color/white</item>
+        <item name="colorSecondary">@color/white</item>
+    </style>
+
+    <style name="Theme.Notes" parent="Base.Theme.Notes" />
+<!--    <style name="floating" parent="Widgt.MaterialComponents.fla">-->
+<!--        <item name="backgroundTint">@color/pink</item>-->
+<!--        <item name="shapeAppearance">50</item>-->
+<!--        <item name="tintMode">@color/white</item>-->
+<!--        <item name="srcCompat">@drawable/ic_add</item>-->
+<!--    </style>-->
+<!--    <style name="floating2" parent="Widget.AppCompat.ImageButton">-->
+<!--        <item name="backgroundTint">@color/pink</item>-->
+<!--        <item name="shapeAppearance">50</item>-->
+<!--        <item name="tintMode">@color/white</item>-->
+<!--        <item name="srcCompat">@drawable/baseline_check_24</item>-->
+<!--    </style>-->
+</resources>

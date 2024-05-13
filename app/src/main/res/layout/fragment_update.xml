@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    >
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        tools:context=".fragments.UpdateFragment">
+
+        <androidx.cardview.widget.CardView
+            android:id="@+id/cardView"
+            android:layout_width="0dp"
+            android:layout_height="0dp"
+            android:layout_margin="16dp"
+            android:layout_marginStart="8dp"
+            app:cardElevation="5dp"
+            android:layout_marginTop="8dp"
+            android:layout_marginEnd="8dp"
+            android:layout_marginBottom="8dp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" >
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="vertical">
+                <EditText
+                    android:id="@+id/titleInputUpdate"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@android:color/transparent"
+                    android:padding="16dp"
+                    android:textColor="@color/black"
+                    android:hint="@string/type_the_title"
+                    android:inputType="text"
+                    android:textStyle="bold"
+                    android:textSize="20sp"
+                    android:textColorHint="@color/black"
+                    android:autofillHints="no" />
+                <EditText
+                    android:id="@+id/bodyInputUpdate"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:background="@android:color/transparent"
+                    android:padding="16dp"
+                    android:gravity="start|top"
+                    android:textColor="#484849"
+                    android:textSize="16sp"
+                    android:hint="@string/type_your_note"
+                    android:inputType="text"
+                    android:textColorHint="@color/black"
+                    android:autofillHints="no" />
+            </LinearLayout>
+        </androidx.cardview.widget.CardView>
+        <com.google.android.material.floatingactionbutton.FloatingActionButton
+            android:id="@+id/fabNote"
+            android:backgroundTint="@color/pink"
+            android:src="@drawable/baseline_check_24"
+            android:tintMode="@color/white"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginEnd="24dp"
+            android:layout_marginBottom="24dp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            android:contentDescription="@string/app_name" />
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</layout>
